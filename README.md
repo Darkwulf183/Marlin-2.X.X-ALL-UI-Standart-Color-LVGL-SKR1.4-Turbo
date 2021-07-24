@@ -4,47 +4,31 @@
 ## JUST uncomment the option for your machine
 ```cpp
 //JUST uncomment the option for your machine
-//#define V6_330_TITAN_TMC 1
-//#define V6_330_TITAN_NO_TMC 1
-//#define V6_330_NO_TITAN_TMC 1
-//#define V6_330_NO_TITAN_NO_TMC 1
-//#define V6_400_TITAN_TMC 1
-//#define V6_400_NO_TITAN_TMC 1
-//#define V6_500_TITAN_TMC 1
-//#define V6_500_TITAN_TMC2209 1       // New Chitu V6 190319     (RN)
-//#define V6_500_TITAN_TMC2209V9 1     // New Chitu V9 200420     (RN)  Testrepo !!! Please only test with a full backup of the board !!!!!!!!!
+#define SKR_330_TITAN_TMC 1
+//#define SKR_330_NO_TITAN_TMC 1
+//#define SKR_400_TITAN_TMC 1
+//#define SKR_400_NO_TITAN_TMC 1
+//#define SKR_500_TITAN_TMC 1
 
-// #define V5_330_TITAN_TMC 1
-// #define V5_330_TITAN_NO_TMC 1
-// #define V5_330_NO_TITAN_TMC 1
-// #define V5_330_NO_TITAN_NO_TMC 1
-// #define XY3_V5_310_NO_TITAN_NO_TMC_NO_ABL 1
-// #define XY2_V6_255_ALL 1        //Please comment with TITAN and with TMC itself in or out in line #elif XY2_V6_255_ALL !!! (RN)
+// #define XY3_SKR_310_NO_TITAN_NO_NO_ABL 1
+ //#define XY2_SKR_255_ALL 1        //Please comment with TITAN and with TMC itself in or out in line #elif XY2_SKR_255_ALL !!! (RN)
 
-// Section shortened name
-// Tronxy X5SA V6 330 Titan TMC = X5SA V6 330 TTMC 2.0.8
-// Tronxy X5SA V6 330 Titan = X5SA V6 330 T 2.0.8
-// Tronxy X5SA V6 330 TMC = X5SA V6 330 TMC 2.0.8
-// Tronxy X5SA V6 400 Titan TMC = X5SA V6 400 TTMC 2.0.8
-// Tronxy X5SA V6 400 TMC = X5SA V6 400 TMC 2.0.8
-// Tronxy X5SA V6 500 Titan TMC = X5SA V6 500 TTMC 2.0.8
-// Tronxy X5SA V6 500 Titan TMC2209 = X5SA V6 500 TTMC NEW 2.0.8
-// Tronxy X5SA V5 330 Titan TMC = X5SA V5 330 TTMC 2.0.8
-// Tronxy X5SA V5 330 Titan = X5SA V5 330 T 2.0.8
-// Tronxy X5SA V5 330 TMC = X5SA V5 330 TMC 2.0.8
-// Tronxy X5SA V5 330 = X5SA V5 330 2.0.8
 
-//Ui Theme Changer
 
-//#define TFT_CLASSIC_UI    //Marlin Classic
-//#define TFT_COLOR_UI      //Marlin Color Ui (Touch Support)
-#define TFT_LVGL_UI       //Marlin MKS Themed UI (Good Touch Support) 
+//TMC Driver Model (Drivers in Uart Mode !!!) TMC2208 are standard selection and always active until TMC2209 is selected.
+//Sensorless homing is not configured by me and everyone must test it themselves. Since I do not use this !!!!
+#define WITH_TMC2209
+
+
+
+//Please select here what you want. Dual Z axis is no longer possible with a dual extruder. With a dual Z axis no dual extruder is possible !!!! Selecting both will result in Marlin not compiling !!!!
 
 //Dual Extruder Setup
 //#define Dual_E
 
-//Power Loss Recovery
-//#define POWER_L
+//Dual Z Axes Support
+//#define WITH_DOUBLE_Z
+//#define WITH_Z_ALIGN      //Comment this out if you not use Z Auto Align (RN)
 
 ```
 
