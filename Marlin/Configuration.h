@@ -22,7 +22,7 @@
 #pragma once
 
 //JUST uncomment the option for your machine
-#define SKR_330_TITAN_TMC 1
+//#define SKR_330_TITAN_TMC 1
 //#define SKR_330_NO_TITAN_TMC 1
 //#define SKR_400_TITAN_TMC 1
 //#define SKR_400_NO_TITAN_TMC 1
@@ -35,7 +35,7 @@
 
 //TMC Driver Model (Drivers in Uart Mode !!!) TMC2208 are standard selection and always active until TMC2209 is selected.
 //Sensorless homing is not configured by me and everyone must test it themselves. Since I do not use this !!!!
-#define WITH_TMC2209
+//#define WITH_TMC2209
 
 
 
