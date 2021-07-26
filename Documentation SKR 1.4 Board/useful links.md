@@ -5,6 +5,7 @@
 
 
 ## Board:
+
 https://github.com/bigtreetech/BIGTREETECH-SKR-V1.3/tree/master/BTT%20SKR%20V1.4
 
 
@@ -14,8 +15,6 @@ https://github.com/bigtreetech/BIGTREETECH-TMC2208-V3.0
 
 https://github.com/bigtreetech/BIGTREETECH-TMC2209-V1.2
 
-<<<<<<< HEAD
 https://github.com/bigtreetech/BIGTREETECH-TFT35-V3.0
-=======
-https://github.com/bigtreetech/BIGTREETECH-TFT35-V3.0
->>>>>>> e755074b1d1561ea140638257f939898bda96733
+
+
