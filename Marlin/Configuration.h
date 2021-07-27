@@ -29,7 +29,7 @@
 //#define SKR_500_TITAN_TMC 1
 
 // #define XY3_SKR_310_NO_TITAN_NO_NO_ABL 1
- //#define XY2_SKR_255_ALL 1        //Please comment with TITAN and with TMC itself in or out in line #elif XY2_SKR_255_ALL !!! (RN)
+//#define XY2_SKR_255_ALL 1                     //Please comment with TITAN and with TMC itself in or out in line #elif XY2_SKR_255_ALL !!! (RN)
 
 
 
@@ -47,6 +47,12 @@
 //Dual Z Axes Support
 //#define WITH_DOUBLE_Z
 //#define WITH_Z_ALIGN      //Comment this out if you not use Z Auto Align (RN)
+
+// Z Auto Align Info:
+// #define WITH_Z_ALIGN activates the Z Auto Align option. This option offers the possibility to align the table automatically via the Z probe. The table is aligned in several steps. 
+// This ensures consistent results without having to turn the Z spindle by hand.
+
+
 
 
 #if SKR_330_TITAN_TMC
