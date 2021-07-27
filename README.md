@@ -31,6 +31,11 @@
 //#define WITH_DOUBLE_Z
 //#define WITH_Z_ALIGN      //Comment this out if you not use Z Auto Align (RN)
 
+// Z Auto Align Info:
+// #define WITH_Z_ALIGN activates the Z Auto Align option. This option offers the possibility to align the table automatically via the Z probe. The table is aligned in several steps. 
+// This ensures consistent results without having to turn the Z spindle by hand.
+
+
 ```
 
 # Marlin 3D Printer Firmware
