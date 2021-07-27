@@ -1,3 +1,4 @@
+# BETA VERSION !!! NOT FOR DOWNLOAD !!! ONLY FOR TEST USE !!!
 # This repository is a copy of the official Marlin, with Tronxy X5SA (and variants) pre-configured.
 
 
