@@ -40,9 +40,13 @@
 
 
 //Please select here what you want. Dual Z axis is no longer possible with a dual extruder. With a dual Z axis no dual extruder is possible !!!! Selecting both will result in Marlin not compiling !!!!
+//The same applies to the selection of Mixing extruder. If you select Mixing Extruders, Dual_E and Double_Z must be deactivated or Marlin will not compile !!!!
 
 //Dual Extruder Setup
 //#define Dual_E
+
+//Mixing Extruder Setup     (Mixing extruder means an extruder such as the BigTreeTech ZSYoung 2in1 Hotend)
+//#define MIXING_EXTRUDER
 
 //Dual Z Axes Support
 //#define WITH_DOUBLE_Z
@@ -52,6 +56,9 @@
 // #define WITH_Z_ALIGN activates the Z Auto Align option. This option offers the possibility to align the table automatically via the Z probe. The table is aligned in several steps. 
 // This ensures consistent results without having to turn the Z spindle by hand.
 
+// Dual Z Axes Info:
+//In this case, #define WITH_DOUBLE_Z does not mean the connectors Z1 and Z2 on the SKR 1.4 board, but a real 1 Z axis and a real 2 Z axis. In this case, Z2 is connected to connector E1. 
+//Thus, each motor is driven with its own stepper driver and makes Z Auto Align possible!!!
 
 
 
@@ -862,7 +869,7 @@
   //#define Z3_DRIVER_TYPE A4988
   //#define Z4_DRIVER_TYPE A4988
   #define E0_DRIVER_TYPE TMC2209
-#ifdef Dual_E   //(RN)
+#if defined(Dual_E) || defined(MIXING_EXTRUDER)   //(RN)
   #define E1_DRIVER_TYPE TMC2209
 #else
   //#define E1_DRIVER_TYPE TMC2209
@@ -889,7 +896,7 @@
   //#define Z3_DRIVER_TYPE A4988
   //#define Z4_DRIVER_TYPE A4988
   #define E0_DRIVER_TYPE TMC2208
-#ifdef Dual_E   //(RN)
+#if defined(Dual_E) || defined(MIXING_EXTRUDER)   //(RN)
   #define E1_DRIVER_TYPE TMC2208
 #else
   //#define E1_DRIVER_TYPE TMC2208
@@ -1378,7 +1385,11 @@
 #else
   #define INVERT_E0_DIR false
 #endif
-#define INVERT_E1_DIR true
+#if WITH_TITAN
+  #define INVERT_E1_DIR true
+#else
+  #define INVERT_E1_DIR false
+#endif
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
 #define INVERT_E4_DIR false
