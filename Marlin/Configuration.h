@@ -60,6 +60,10 @@
 //In this case, #define WITH_DOUBLE_Z does not mean the connectors Z1 and Z2 on the SKR 1.4 board, but a real 1 Z axis and a real 2 Z axis. In this case, Z2 is connected to connector E1. 
 //Thus, each motor is driven with its own stepper driver and makes Z Auto Align possible!!!
 
+//Set this selection to #define SDCARD_CONNECT_LCD if the SDCARD Slot in the board is to remain unused and only the slot on the display is to be used. (Default is SD CARD Onboard)
+//This setting must be chosen very carefully to avoid problems with firmware updates later on!!!!
+//#define SDCARD_CONNECT_LCD
+
 
 
 #if SKR_330_TITAN_TMC
