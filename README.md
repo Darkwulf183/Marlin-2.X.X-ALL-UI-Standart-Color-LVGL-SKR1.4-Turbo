@@ -35,6 +35,9 @@
 // #define WITH_Z_ALIGN activates the Z Auto Align option. This option offers the possibility to align the table automatically via the Z probe. The table is aligned in several steps. 
 // This ensures consistent results without having to turn the Z spindle by hand.
 
+//Set this selection to #define SDCARD_CONNECT_LCD if the SDCARD Slot in the board is to remain unused and only the slot on the display is to be used. (Default is SD CARD Onboard)
+//This setting must be chosen very carefully to avoid problems with firmware updates later on!!!!
+//#define SDCARD_CONNECT_LCD
 
 ```
 
